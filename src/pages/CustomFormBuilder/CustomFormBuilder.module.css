@@ -1,0 +1,550 @@
+/* CustomFormBuilder.module.css */
+.customFormBuilderWrapper {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Form Header */
+.formHeader {
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.formTitleInput {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.formTitleInput:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.formDescriptionInput {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.formDescriptionInput:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+/* Form Grid Layout */
+.formGrid, .previewGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+/* Width Classes */
+.fullWidth {
+  grid-column: span 12;
+}
+
+.threeQuartersWidth {
+  grid-column: span 9;
+}
+
+.halfWidth {
+  grid-column: span 6;
+}
+
+.thirdWidth {
+  grid-column: span 4;
+}
+
+/* Form Item */
+.formItem {
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+  margin-bottom: 1.5rem;
+  break-inside: avoid;
+}
+
+.formItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dividerItem {
+  padding: 0.5rem 1.5rem;
+}
+
+.formItemHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dragHandle {
+  cursor: move;
+  color: #666;
+  font-size: 1.25rem;
+}
+
+.elementTypeBadge {
+  font-size: 0.8rem;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  margin-right: auto;
+  font-weight: 500;
+}
+
+.deleteIcon {
+  color: #f44336;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: color 0.2s;
+}
+
+.deleteIcon:hover {
+  color: #d32f2f;
+}
+
+/* Form Fields */
+.formFieldContainer {
+  margin-bottom: 1.25rem;
+}
+
+.fieldLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.formField {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.formField:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+/* React Select Styling */
+.reactSelect {
+  margin-top: 0.5rem;
+}
+
+.reactSelect .select__control {
+  min-height: 42px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  transition: border-color 0.2s;
+}
+
+.reactSelect .select__control--is-focused {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 1px #1976d2;
+}
+
+.reactSelect .select__control--is-disabled {
+  background-color: #f9f9f9;
+}
+
+.reactSelect .select__menu {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Field Settings */
+.fieldSettings {
+  background-color: #f9f9f9;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin-top: 1.25rem;
+}
+
+.settingRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.settingRow label {
+  width: 140px;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.settingRow input[type="text"],
+.settingRow input[type="number"],
+.settingRow input[type="date"],
+.settingRow input[type="color"],
+.settingRow select {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+.settingRow input[type="color"] {
+  width: 50px;
+  height: 30px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.settingRow input:focus,
+.settingRow select:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+/* Options Editor */
+.optionsEditor {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.optionsEditor h4 {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.optionRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.optionRow input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.optionDeleteIcon {
+  color: #f44336;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: color 0.2s;
+}
+
+.optionDeleteIcon:hover {
+  color: #d32f2f;
+}
+
+/* Radio and Checkbox Groups */
+.radioGroup, .checkboxGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.radioOption, .checkboxOption {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.radioOption input, .checkboxOption input {
+  cursor: pointer;
+}
+
+/* Button Container and Alignment */
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.align-start {
+  justify-content: flex-start;
+}
+
+.align-center {
+  justify-content: center;
+}
+
+.align-end {
+  justify-content: flex-end;
+}
+
+/* Button Styles */
+.formButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: auto;
+  background-color: var(--button-color, #1976d2);
+  color: var(--text-color, #ffffff);
+}
+
+.formButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effects */
+.formButton.hoverDarken:hover {
+  filter: brightness(0.9);
+}
+
+.formButton.hoverLighten:hover {
+  filter: brightness(1.1);
+}
+
+.formButton.hoverColorChange:hover {
+  background-color: var(--hover-color) !important;
+}
+
+.formButton:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Rating */
+.ratingContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star {
+  font-size: 1.75rem;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.starSelected {
+  color: #ffc107;
+}
+
+/* Range Input */
+.rangeContainer {
+  width: 100%;
+}
+
+.rangeValues {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Empty Message */
+.emptyMessage {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 2.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-size: 1rem;
+  grid-column: 1 / -1;
+}
+
+/* Form Actions */
+.formActions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+}
+
+/* Preview Mode */
+.previewContainer {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.previewTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.previewDescription {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.previewForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.previewField {
+  margin-bottom: 1.5rem;
+}
+
+.previewLabel {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.requiredIndicator {
+  color: #f44336;
+  margin-left: 0.25rem;
+}
+
+/* Error Message */
+.errorMessage {
+  color: #f44336;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .threeQuartersWidth {
+    grid-column: span 12;
+  }
+  
+  .halfWidth {
+    grid-column: span 6;
+  }
+  
+  .thirdWidth {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 992px) {
+  .formGrid, .previewGrid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .halfWidth, .thirdWidth {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 768px) {
+  .formHeader {
+    padding: 1rem;
+  }
+  
+  .formTitleInput {
+    font-size: 1.3rem;
+  }
+  
+  .customFormBuilderWrapper {
+    padding: 1rem;
+  }
+
+  .formActions {
+    justify-content: center;
+  }
+  
+  .formGrid, .previewGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .halfWidth, .thirdWidth {
+    grid-column: span 2;
+  }
+
+  /* Stack radio and checkbox options on small screens */
+  .radioGroup, .checkboxGroup {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .formGrid, .previewGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .halfWidth, .thirdWidth, .threeQuartersWidth {
+    grid-column: span 1;
+  }
+  
+  .formActions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .settingRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .settingRow label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.selectErrorMessage {
+  color: #d32f2f;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  margin-left: 14px;
+}

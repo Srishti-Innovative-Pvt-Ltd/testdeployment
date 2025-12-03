@@ -1,0 +1,63 @@
+.InductionAddCard {
+  display: flex;
+flex: 0 0 calc(50% - 8px);
+  height: 8rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.InductionAddCardContent {
+  flex: 1;
+}
+
+.InductionAddCardTitle {
+  font-weight: bold;
+  color: #2e2e2e;
+  margin: 0;
+}
+
+.InductionAddCardType {
+  color: #888;
+  font-weight: normal;
+}
+
+.InductionAddCardDescription {
+  margin-top: 4px;
+  color: #555;
+  font-size: 14px;
+}
+
+.InductionAddCardActions {
+  display: flex;
+  gap: 12px; 
+  align-items: center;
+  margin-left: 16px;
+}
+
+.InductionAddCardIcon {
+  font-size: 28px;
+  cursor: pointer;
+  color: #1e90ff;
+}
+
+.InductionAddCardDelete {
+  color: red;
+}
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .InductionAddCard {
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .InductionAddCardActions {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+}

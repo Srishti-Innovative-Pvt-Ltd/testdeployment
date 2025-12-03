@@ -1,0 +1,163 @@
+.reimbursementHistoryContainer {
+  padding: 10px;
+}
+
+.reimbursementHistoryFilterSection {
+  display: flex;             
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-end;     
+  flex-wrap: wrap;          
+}
+
+.reimbursementHistoryFilterGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.reimbursementHistoryFilterGroup label {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  color: #104eb1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reimbursementHistoryDatePickerInput {
+  padding: 8px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #333;
+  width: 250px;    
+  max-width: 100%;
+}
+
+.reimbursementHistoryFilterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;   
+  margin-top: 0;          
+}
+
+.detailsIcon {
+  font-size: 1.2rem;
+  color: #2196f3;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reimbursementHistoryFilterSection {
+    flex-direction: column;     
+    gap: 0.75rem;
+  }
+
+  .reimbursementHistoryFilterButtons {
+    justify-content: flex-start; 
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .detailsIcon {
+    font-size: 2rem;
+  }
+
+  .reimbursementHistoryDatePickerInput {
+    width: 100%;              
+  }
+}
+
+
+/* Overlay for modal */
+.reimbursementHistoryModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Modal content box */
+.reimbursementHistoryModalContent {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeInUp 0.3s ease;
+}
+
+/* Modal title */
+.reimbursementHistoryModalTitle {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e63946;
+}
+
+/* Modal text / reason */
+.reimbursementHistoryModalText {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Close button */
+.reimbursementHistoryModalCloseBtn {
+  background: #e63946;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.reimbursementHistoryModalCloseBtn:hover {
+  background: #c92c3a;
+}
+
+/* Rejected Status Button */
+.reimbursementHistoryRejectedButton {
+  background-color: #ffe5e5;
+  color: #d32f2f;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  border: 1px solid #f5b5b5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reimbursementHistoryRejectedButton:hover {
+  background-color: #f8c7c7;
+}
+
+.reimbursementHistoryRejectedButton:active {
+  transform: scale(0.97);
+}
+
+/* Modal animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

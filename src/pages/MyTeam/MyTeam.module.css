@@ -1,0 +1,117 @@
+.myTeamStatus {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.myTeamStatus::before {
+  content: "●";
+  margin-right: 6px;
+  font-size: 12px;
+}
+
+.myTeamApproved {
+  color: green;
+}
+
+.myTeamPending {
+  color: orange;
+}
+
+.myTeamRejected {
+  color: red;
+}
+
+/* ================================
+   🔹 Filter Section
+   ================================ */
+.myTeamFilterSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 80%;        
+  max-width: 1200px;   
+
+
+}
+
+
+.myTeamFilterGroup {
+  display: flex;
+  flex-direction: column; 
+  gap: 4px;
+  flex: 1 1 225px;  
+  min-width: 180px; 
+}
+
+.myTeamInputRow {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap; 
+}
+
+.myTeamFilterGroup label {
+  font-size: 0.85rem;
+  color: #104eb1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.myTeamDatePickerInput {
+  padding: 8px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #333;
+  width: 225px;    
+  max-width: 100%; 
+}
+
+/* ================================
+   🔹 50% Width for 3 specific input boxes
+   ================================ */
+.halfWidthInput {
+  width: 50%;
+}
+
+/* ================================
+   🔹 Clear Button
+   ================================ */
+.myTeamFilterButtons {
+  display: flex;
+  align-items: flex-end;   
+}
+
+.myTeamFilterButtons .clearButton {
+  height: 40px;   
+  padding: 0 16px;
+}
+
+/* ================================
+   🔹 Responsive
+   ================================ */
+@media (max-width: 480px) {
+  .myTeamInputRow {
+    flex-direction: column; 
+    align-items: stretch;
+  }
+
+  .myTeamDatePickerInput,
+  .halfWidthInput {
+    width: 100%; 
+  }
+
+  .myTeamFilterButtons {
+    width: 100%;
+  }
+
+  .myTeamFilterButtons .clearButton {
+    width: 100%; 
+  }
+}

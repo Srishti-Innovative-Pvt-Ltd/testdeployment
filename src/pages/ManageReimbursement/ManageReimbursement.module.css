@@ -1,0 +1,200 @@
+.manageReimbursementContainer {
+  padding: 10px;
+}
+
+/* Filter Section */
+.manageReimbursementFilterSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: end;
+}
+
+.manageReimbursementFilterGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.manageReimbursementFilterGroup label {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  color: #104eb1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.manageReimbursementFilterGroup select {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.manageReimbursementFilterGroup select:focus {
+  border-color: #07214b;
+}
+
+.manageReimbursementDatePicker {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+.manageReimbursementFilterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+ margin-bottom: 0.2rem;
+}
+
+/* Table Icons */
+.manageReimbursementDetailsIcon {
+  font-size: 1.5rem;
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.manageReimbursementActionIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.manageReimbursementApproveIcon {
+  font-size: 1.5rem;
+  color: green;
+  cursor: pointer;
+}
+
+.manageReimbursementRejectIcon {
+  font-size: 1.5rem;
+  color: red;
+  cursor: pointer;
+}
+
+.manageReimbursementSettlement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.manageReimbursementEditIcon {
+color: #007bff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+
+
+.manageReimbursementSettlementInput {
+  width: 80px;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .manageReimbursementFilterSection {
+    grid-template-columns: 1fr;
+  }
+
+  .manageReimbursementDetailsIcon,
+  .manageReimbursementApproveIcon,
+  .manageReimbursementRejectIcon {
+    font-size: 2rem;
+  }
+}
+
+
+/* Rejection Reason Modal Styles */
+.manageReimbursementModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.manageReimbursementModalContent {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeInUp 0.3s ease;
+}
+
+.manageReimbursementModalTitle {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e63946;
+}
+
+.manageReimbursementModalText {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.manageReimbursementModalCloseBtn {
+  background: #e63946;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.manageReimbursementModalCloseBtn:hover {
+  background: #c92c3a;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Rejected Status Button */
+.manageReimbursementRejectedButton {
+  background-color: #ffe5e5;
+  color: #d32f2f;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  border: 1px solid #f5b5b5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.manageReimbursementRejectedButton:hover {
+  background-color: #f8c7c7;
+}
+
+.manageReimbursementRejectedButton:active {
+  transform: scale(0.97);
+}

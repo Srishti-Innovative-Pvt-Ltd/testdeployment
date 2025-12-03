@@ -1,0 +1,186 @@
+.EmployeeDataTablePageContainer {
+  padding: 20px;
+  background-color: white;
+  font-size: 14px;
+}
+
+
+
+.filterRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.dropdown {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.85rem;
+  outline: none;
+  min-width: 220px;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown:focus {
+  border-color: #07214b;
+}
+.filterRow label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #104eb1;
+  margin-right: 8px;
+}
+
+
+.editIcon {
+  color: #007bff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Toggle */
+.EmployeeDataTablePageToggleWrapper {
+  width: 115px;
+  height: 36px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  gap: 12px;
+}
+
+.EmployeeDataTablePageToggleIcon {
+  font-size: 20px;
+  width: 30px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  transition: left 0.3s ease;
+}
+
+.Active .EmployeeDataTablePageToggleIcon {
+  left: calc(100% - 32px);
+  color: #0a9c1d;
+}
+
+.Inactive .EmployeeDataTablePageToggleIcon {
+  left: 2px;
+  color: #ff0000;
+}
+
+.EmployeeDataTablePageToggleText {
+  flex: 1;
+  text-align: center;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.Active .EmployeeDataTablePageToggleText {
+  margin-left: -6px;
+     margin-right: 1rem;
+}
+
+.Inactive .EmployeeDataTablePageToggleText {
+  margin-right: -6px;
+ margin-left: 1rem;
+}
+
+.Active {
+  background-color: #0a9c1d;
+  color: white;
+}
+
+.Inactive {
+  background-color: #ff0000;;
+  color: #faf9f9;
+}
+
+.ActiveIcon {
+  background-color: #ffffff;
+  color: #0a9c1d;
+  box-shadow: 0 0 5px rgba(10, 156, 29, 0.4);
+}
+
+.InactiveIcon {
+  background-color: #ffffff;
+  color: #ff0000;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+.EmployeeDataTablePageTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+
+
+.filterSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  align-items: flex-end;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.filterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 290px;  
+  flex: 1;
+}
+
+.filterGroup label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: white;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  color: #104eb1;
+  font-weight: 500;
+  transition: 0.3s ease;
+ 
+}
+
+.dropdown {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+ color: #000000;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  max-width: 290px; 
+  transition: border-color 0.3s ease;
+}
+
+.dropdown:focus {
+  border-color: #07214b;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}

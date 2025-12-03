@@ -1,0 +1,134 @@
+.applyReimbursementWrapper {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.applyReimbursementTitle {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.applyReimbursementForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* reduced gap */
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px; /* optional: smaller spacing between rows */
+}
+
+.formGroup {
+  flex: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.formTextarea {
+  resize: vertical;
+  height: 80px;
+}
+
+/* File input styled like other inputs */
+.formInputFile {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  height: 40px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Center the file text in the input */
+.formInputFile::-webkit-file-upload-button {
+  height: 100%;
+  margin: 0;
+  padding: 0 10px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.formFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.submitBtn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submitBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .applyReimbursementWrapper {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .formRow {
+    flex-direction: column;
+  }
+}
+
+
+.errorMessage {
+  color: #e63946;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.star{
+  color: red;
+}
+
+.formInputFile {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 14px;
+  cursor: pointer;
+
+  /* Center content vertically */
+  display: flex;
+  align-items: center;
+}
+

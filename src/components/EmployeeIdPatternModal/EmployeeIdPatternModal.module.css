@@ -1,0 +1,79 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.star{
+  color: red;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.closeIcon {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.fieldGroup label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.fieldGroup input,
+.fieldGroup select {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  font-size: 1rem;
+}
+
+.fieldGroup input:focus,
+.fieldGroup select:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  outline: none;
+}
+
+.error {
+  font-size: 0.85rem;
+  color: #e74c3c;
+  margin-top: 0.25rem;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.disabledSelect {
+  cursor: not-allowed;  
+}

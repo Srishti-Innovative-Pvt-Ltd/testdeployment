@@ -1,0 +1,123 @@
+.ReimbursmentAmountEdit_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.ReimbursmentAmountEdit_modal {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  box-sizing: border-box;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.ReimbursmentAmountEdit_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ReimbursmentAmountEdit_closeButton {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.ReimbursmentAmountEdit_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fullWidth {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ReimbursmentAmountEdit_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.ReimbursmentAmountEdit_content input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+
+
+.ReimbursmentAmountEdit_content input[readonly] {
+  background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .ReimbursmentAmountEdit_modal {
+    width: 100%;
+    max-width: 95%;
+    padding: 20px;         /* reduce padding */
+    border-radius: 10px;   /* softer corners */
+  }
+
+  .ReimbursmentAmountEdit_header h2,
+  .ReimbursmentAmountEdit_header h3 {
+    font-size: 1rem;       /* scale down title */
+  }
+
+  .ReimbursmentAmountEdit_closeButton {
+    font-size: 24px;       /* slightly smaller close button */
+  }
+
+  .ReimbursmentAmountEdit_content {
+    gap: 15px;             /* tighter spacing */
+  }
+
+  .ReimbursmentAmountEdit_content input {
+    font-size: 13px;       /* smaller input text */
+    padding: 8px;
+  }
+
+  .ReimbursmentAmountEdit_footer {
+    margin-top: 16px;      /* tighter spacing */
+  }
+}
+
+@media (max-width: 400px) {
+  .ReimbursmentAmountEdit_modal {
+    padding: 15px;         /* even tighter padding for very small devices */
+  }
+
+  .ReimbursmentAmountEdit_content input {
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  .ReimbursmentAmountEdit_closeButton {
+    font-size: 22px;
+  }
+}
+

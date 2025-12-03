@@ -1,0 +1,115 @@
+.formContainer {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+}
+.star{
+  color: red;
+}
+
+.formTitle {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid layout for fields */
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+  gap: 1.5rem;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .formGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .formGrid {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.input,
+.textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.textarea {
+  resize: none;
+  min-height: 60px;
+}
+
+.radioOptions {
+  display: flex;
+  gap: 2rem;              /* space between each option */
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  flex-wrap: wrap;        /* wraps nicely on smaller screens */
+}
+
+.radioOptions label {
+  display: flex;
+  align-items: center;    /* vertically center radio & text */
+  gap: 0.5rem;            /* small gap between radio & text */
+  cursor: pointer;
+  white-space: nowrap;    /* keeps radio + label together */
+}
+
+.radioOptions input[type="radio"] {
+  margin: 0;
+  accent-color: #007bff;  /* optional: style radio color */
+  width: 16px;
+  height: 16px;
+}
+
+.formActions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+
+.bloodGroupSelect {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")
+              no-repeat right 1rem center;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.6rem 3rem 0.6rem 1rem; /* space for arrow */
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}

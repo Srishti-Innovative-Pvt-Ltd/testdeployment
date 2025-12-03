@@ -1,0 +1,72 @@
+.blueButton {
+  min-width: 6rem;
+  background: linear-gradient(to right, #07214b, #104eb1);
+  border-radius: 20px;
+  padding: 6px 8px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  transition: background 0.4s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.blueButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.blueButton:hover::before {
+  left: 100%;
+}
+
+.blueButton:hover {
+  background: linear-gradient(to right, #0d3c91, #1a5edc);
+  box-shadow: 0 8px 15px rgba(16, 78, 177, 0.4);
+  transform: translateY(-3px);
+}
+
+.secondaryButton {
+  min-width: 6rem;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 5px 8px;
+  border: 2px solid #0a2f6a;
+  color: #0a2f6a;
+  font-size: 1rem;
+  transition: background-color 0.4s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.secondaryButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: rgba(10, 47, 106, 0.05);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.secondaryButton:hover::before {
+  left: 100%;
+}
+
+.secondaryButton:hover {
+  background-color: #0a2f6a;
+  color: #ffffff;
+  box-shadow: 0 8px 12px rgba(10, 47, 106, 0.4);
+  transform: translateY(-3px);
+}

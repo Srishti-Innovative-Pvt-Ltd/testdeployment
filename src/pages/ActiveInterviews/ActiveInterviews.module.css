@@ -1,0 +1,101 @@
+.activeInterviewContainer {
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+}
+
+.filterRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterGroup label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #104eb1;
+  margin-bottom: 4px;
+  background: white;
+  padding: 0 6px;
+}
+
+.datePickerInput {
+  padding: 10px;
+  border: 1.5px solid #104eb1;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #104eb1;
+  min-width: 220px;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.monthLabel {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  color: #000;
+}
+
+.paginationControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.perPage select {
+  padding: 4px 10px;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: none;
+  outline: none;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.pageBtn {
+  padding: 6px 12px;
+  background-color: #eee;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #007bff;
+  cursor: pointer;
+  min-width: 32px;
+  height: 32px;
+}
+
+.activePage {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,101 @@
+.leaveRequestsContainer {
+  padding: 10px;
+}
+
+/* Filter Section */
+.leaveRequestsFilterSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: end;
+}
+
+.leaveRequestsFilterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.leaveRequestsFilterGroup label {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  color: #104eb1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.leaveRequestsFilterGroup select {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.leaveRequestsFilterGroup select:focus {
+  border-color: #07214b;
+}
+
+.leaveRequestsDatePickerInput {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #333;
+  width: 100%;
+}
+
+.leaveRequestsFilterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-top: 0.5rem;
+}
+
+/* Table Icons */
+.detailsIcon {
+  font-size: 1.2rem;
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.actionIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.approveIcon {
+  font-size: 1.2rem;
+  color: green;
+  cursor: pointer;
+}
+
+.rejectIcon {
+  font-size: 1.2rem;
+  color: red;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .leaveRequestsFilterSection {
+    grid-template-columns: 1fr;
+  }
+
+  .leaveRequestsFilterButtons {
+    justify-content: flex-start;
+  }
+
+  .detailsIcon,
+  .approveIcon,
+  .rejectIcon {
+    font-size: 2rem;
+  }
+}

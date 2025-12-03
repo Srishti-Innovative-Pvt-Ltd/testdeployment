@@ -1,0 +1,34 @@
+.VerifiedEmployeeBackgroundVerificationInfoWrapper {
+  padding: 24px;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+.VerifiedEmployeeBackgroundVerificationInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.VerifiedEmployeeBackgroundVerificationInfoGrid p {
+  font-size: 13px;
+  margin: 0 0 4px;
+  color: rgb(66, 65, 65);
+  font-weight: 500;
+}
+
+.VerifiedEmployeeBackgroundVerificationInfoGrid h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 16px;
+    color: black;
+}
+
+.VerifiedEmployeeBackgroundVerificationInfoGrid a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0056d2;
+  text-decoration: underline;
+  margin-bottom: 16px;
+  display: inline-block;
+}

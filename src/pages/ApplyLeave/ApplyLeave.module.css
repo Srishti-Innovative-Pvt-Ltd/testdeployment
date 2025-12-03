@@ -1,0 +1,80 @@
+.applyLeaveContainer {
+  padding: 20px;
+}
+
+.leaveForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+}
+
+.formGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.star{
+  color: red;
+}
+
+.formGroupFull {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputField {
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.inputField select,
+select.inputField {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")
+    no-repeat right 1rem center;
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  padding: 0.6rem 3rem 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.textArea {
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: none;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+
+

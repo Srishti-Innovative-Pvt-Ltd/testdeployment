@@ -1,0 +1,100 @@
+.tabContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.stepWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  min-width: 70px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  color: #555;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.label {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-top: 0.75rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.activeText {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.line {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #e0e0e0;
+  z-index: 0;
+}
+
+.progressLine {
+  background-color: #007bff !important;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .tabContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .stepWrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+  }
+
+  .circle {
+    margin-right: 1rem;
+  }
+
+  .label {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .line {
+    top: 100%;
+    left: 25px;
+    width: 2px;
+    height: 40px;
+  }
+
+  .progressLine {
+    background-color: #007bff !important;
+  }
+}

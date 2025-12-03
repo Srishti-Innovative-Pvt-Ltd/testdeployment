@@ -1,0 +1,53 @@
+.performanceFilterSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-end;
+}
+
+.performanceFilterGroup {
+  flex: 0 0 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.performanceFilterGroup label {
+ 
+  top: -10px;
+  left: 12px;
+  background: white;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  color: #104eb1;
+  font-weight: 500;
+  
+  transition: 0.3s ease;
+}
+
+.performanceFilterGroup select,
+.performanceDatePickerInput {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.performanceFilterGroup select:focus,
+.performanceDatePickerInput:focus {
+  border-color: #07214b;
+}
+
+.performanceFilterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}

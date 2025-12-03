@@ -1,0 +1,90 @@
+.CategoryPayrollAllocarionContainer {
+  padding: 5px 10px; 
+}
+
+/* Header */
+.CategoryPayrollAllocarionHeader {
+  display: flex;
+  justify-content: flex-end; /* align button to the right */
+  align-items: center;
+}
+
+.CategoryPayrollAllocarionHeader h2 {
+  color: #104eb1;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Filters */
+.CategoryPayrollAllocarionFilterSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: end;
+}
+
+.CategoryPayrollAllocarionFilterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.CategoryPayrollAllocarionFilterGroup label {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  color: #104eb1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.CategoryPayrollAllocarionFilterGroup select {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.CategoryPayrollAllocarionFilterGroup select:focus {
+  border-color: #07214b;
+}
+
+.CategoryPayrollAllocarionDisabledGroup select {
+  pointer-events: none;  
+  opacity: 0.6;          
+}
+
+.CategoryPayrollAllocarionFilterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+
+
+
+/* Edit Icon */
+.CategoryPayrollAllocarionEditIcon {
+  font-size: 2rem;
+  color: #2196f3;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .CategoryPayrollAllocarionFilterSection {
+    grid-template-columns: 1fr;
+  }
+
+  .CategoryPayrollAllocarionFilterButtons {
+    justify-content: flex-start;
+  }
+}

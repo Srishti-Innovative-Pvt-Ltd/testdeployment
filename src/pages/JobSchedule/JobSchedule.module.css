@@ -1,0 +1,96 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+.star{
+  color: red;
+}
+
+.datePickerInput {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.datePickerInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+/* Tablet (≤1024px): 2 columns */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (≤640px): 1 column */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.buttonGroup {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+
+.customSelect {
+  appearance: none;          
+  -webkit-appearance: none;  
+  -moz-appearance: none;     
+
+  background: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")
+              no-repeat right 1rem center;  
+  background-color: #fff;    
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.6rem 3rem 0.6rem 1rem; 
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.customSelect:focus {
+  outline: none;
+  border-color: #007bff;
+}

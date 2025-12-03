@@ -1,0 +1,39 @@
+.subHeader{
+    width: 100%;
+    min-height: 12vh; /*prev it was 17vh*/
+    background-color: #ffff;
+    /* padding: 6rem 1rem 1rem 17rem; */
+    
+}
+
+.subHeaderDropdown {
+  display: inline-block;
+  font-size: small;
+  margin-right: 0.25rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  border: none;
+  padding: 0.25rem;
+  width: auto; 
+  min-width: fit-content; 
+  max-width: 100%;
+  margin-bottom: .25rem;
+  text-decoration: none;
+  color: var(--font-color-base);
+  margin-top: 2vh;
+}
+.collapsedSubHeader {
+  padding-left: 7rem !important;
+}
+
+
+.subHeaderDropdown option{
+    background-color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .subHeader {
+    padding: 6rem 1rem 1rem 1rem;
+  }
+  
+}

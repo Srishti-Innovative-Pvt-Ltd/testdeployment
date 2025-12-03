@@ -1,0 +1,110 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalBox {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 24px 28px;
+  max-width: 480px;
+  width: 100%;
+  animation: fadeInScale 0.3s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh; /* Prevent modal from overflowing screen */
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.modalHeader h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.modalBody {
+  font-size: 15px;
+  color: #444;
+
+  overflow-y: auto;
+  max-height: 50vh;
+  padding-right: 4px;
+  margin-bottom: 16px;
+}
+
+.modalBody::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modalBody::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.message {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.fieldList {
+  margin-bottom: 16px;
+  padding-left: 0;
+  list-style: none;
+  color: #d9534f;
+}
+
+.fieldItem {
+  margin-bottom: 1rem;
+}
+
+.fieldLabel {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.commentInput {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.confirmText {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: auto;
+}

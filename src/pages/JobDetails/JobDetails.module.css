@@ -1,0 +1,61 @@
+.jobDetailsWrapper {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Sidebar with fixed width on desktop */
+.sidebar {
+  flex: 0 0 300px;
+}
+
+/* Content takes remaining space */
+.jobContent {
+  flex: 1;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.jobContent h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.jobContent p {
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+}
+
+.jobContent ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* 🌐 Responsive Layout */
+@media (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: 1;
+    order: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .jobContent {
+    order: 2;
+  }
+}

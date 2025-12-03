@@ -1,0 +1,153 @@
+.employeeTotalLeaveDetails {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.employeeTotalLeaveDetails__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+/* Centered title + date */
+.employeeTotalLeaveDetails__center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.employeeTotalLeaveDetails__center h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.employeeTotalLeaveDetails__monthYear {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Right-aligned back button */
+.employeeTotalLeaveDetails__right {
+  margin-left: auto;
+}
+
+/* Status */
+.employeeTotalLeaveDetails__status {
+  font-weight: 500;
+}
+
+.employeeTotalLeaveDetails__approved {
+  color: green;
+}
+
+.employeeTotalLeaveDetails__pending {
+  color: orange;
+}
+
+.employeeTotalLeaveDetails__rejected {
+  color: red;
+}
+
+/* Details Icon */
+.employeeTotalLeaveDetails__detailsIcon {
+  color: #0073e6;
+}
+
+
+
+
+ /* rejected reason modal and button styles */
+.employeeTotalLeaveDetails__rejectedButton {
+  background-color: #ffe5e5;
+  color: #d32f2f;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  border: 1px solid #f5b5b5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employeeTotalLeaveDetails__rejectedButton:hover {
+  background-color: #f8c7c7;
+}
+
+.employeeTotalLeaveDetails__rejectedButton:active {
+  transform: scale(0.97);
+}
+
+/* Modal Overlay */
+.employeeTotalLeaveDetails__modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Modal Content */
+.employeeTotalLeaveDetails__modalContent {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeInUp 0.3s ease;
+}
+
+.employeeTotalLeaveDetails__modalTitle {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e63946;
+}
+
+.employeeTotalLeaveDetails__modalText {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.employeeTotalLeaveDetails__modalCloseBtn {
+  background: #e63946;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.employeeTotalLeaveDetails__modalCloseBtn:hover {
+  background: #c92c3a;
+}
+
+/* Modal Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

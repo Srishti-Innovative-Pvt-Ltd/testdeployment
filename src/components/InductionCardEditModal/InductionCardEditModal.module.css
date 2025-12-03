@@ -1,0 +1,79 @@
+.InductionCardEditModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.InductionCardEditModal__Modal {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 800px;
+  max-width: 95%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.InductionCardEditModal__Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.InductionCardEditModal__CloseIcon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.InductionCardEditModal__Content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.InductionCardEditModal__Row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.InductionCardEditModal__InputGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.InductionCardEditModal__InputGroup input,
+.InductionCardEditModal__InputGroup textarea,
+.InductionCardEditModal__InputGroup select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.InductionCardEditModal__RadioGroup {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.InductionCardEditModal__ButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.errorText {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}

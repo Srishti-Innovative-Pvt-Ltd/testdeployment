@@ -1,0 +1,26 @@
+.VerifiedEmployeeJobAndScheduleInfoWrapper {
+  padding: 24px;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+.VerifiedEmployeeJobAndScheduleInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  line-height: 1.8;
+}
+
+.VerifiedEmployeeJobAndScheduleInfoGrid p {
+  font-size: 13px;
+  margin: 0;
+  color: rgb(66, 65, 65);
+  font-weight: 500;
+}
+
+.VerifiedEmployeeJobAndScheduleInfoGrid h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 4px 0 16px;
+    color: black;
+}

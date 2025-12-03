@@ -1,0 +1,28 @@
+.VerifiedEmployeeDependentInfoWrapper {
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.VerifiedEmployeeDependentInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.VerifiedEmployeeDependentInfoColumn > div {
+  margin-bottom: 20px;
+}
+
+.VerifiedEmployeeDependentInfoColumn p {
+  font-size: 13px;
+  margin: 0 0 4px;
+  color: rgb(66, 65, 65);
+  font-weight: 500;
+}
+
+.VerifiedEmployeeDependentInfoColumn h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 8px;
+    color: black;
+}

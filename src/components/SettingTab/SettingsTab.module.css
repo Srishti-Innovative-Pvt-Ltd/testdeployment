@@ -1,0 +1,81 @@
+
+
+button.active {
+  color: #007bff;
+  position: relative;
+}
+
+button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  border-radius: 2px;
+}
+
+
+.SettingsTabCompanyTabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.SettingsTabCompanyTabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* Company Tab Button */
+.SettingsTabCompanyTabButton {
+  background: none;
+  border: none;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #4a5568;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.SettingsTabCompanyTabButton:hover {
+  color: #2563eb;
+}
+
+/* Active tab: blue color + underline */
+.active {
+  color: #007bff;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  border-radius: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .SettingsTabCompanyTabs {
+    gap: 1rem;
+  }
+
+  .SettingsTabCompanyTabButton {
+    font-size: 0.95rem;
+    padding: 0.8rem 0;
+  }
+}

@@ -1,0 +1,11 @@
+.helpContainer{
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}

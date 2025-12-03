@@ -1,0 +1,197 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; 
+  padding: 1rem;
+}
+
+
+.imageUploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customImageContainer {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  border: 2px dashed #ccc;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  position: relative;
+  cursor: pointer;
+  margin-left: 1.2rem;
+}
+
+.customImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.fileInput {
+  display: none;
+}
+
+.plusOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ccc;
+  font-size: 3rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.customImageContainer:hover img {
+  opacity: 0.4;
+}
+
+.uploadText {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  color: #000000;
+}
+
+/* Detail Grid */
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; /* reduced */
+  margin-bottom: 1.2rem; /* reduced */
+}
+
+/* Form Field */
+.formGroup {
+  margin-top: 20px; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 0.25rem; 
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.formInput {
+  padding: 0.5rem 0.75rem; 
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  width: 100%;
+}
+
+/* Gender Radio Buttons */
+.radioOptions {
+  display: flex;
+  gap: 1.9rem;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.radioOptions label {
+  display: flex;
+  align-items: center; 
+  gap: 0.4rem;          
+  cursor: pointer;     
+}
+
+.radioOptions input[type="radio"] {
+  margin: 0;          
+  position: relative;
+  top: 0.1px;            
+}
+
+/* Footer Buttons */
+.footerButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; 
+  margin-top: 1.5rem; 
+}
+
+/* Checkbox Styling */
+.formGroupCheckbox {
+  display: flex;
+  align-items: center;
+  margin-top: 0.8rem;
+  margin-left: 2rem; 
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.checkboxInput {
+  width: 16px;
+  height: 16px;
+  accent-color: #007bff;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* Side fields beside image */
+.sideFields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; 
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.sideRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+.star{
+  color: red;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+  .detailsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topSection {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .sideFields {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .detailsGrid,
+  .sideRow {
+    grid-template-columns: 1fr;
+  }
+
+
+  .customImageContainer {
+    width: 14rem;
+    height: 14rem;
+  }
+}

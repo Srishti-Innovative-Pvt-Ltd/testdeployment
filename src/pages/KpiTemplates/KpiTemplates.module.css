@@ -1,0 +1,107 @@
+.kpiTemplatesWrapper {
+  background-color: #fff;
+}
+
+.filterSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: end;
+  margin-top: 2rem;
+}
+
+.filterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterGroup label {
+ position: absolute;
+  top: -10px;
+  left: 12px;
+  background: white;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  color: #104eb1;
+  font-weight: 500;
+  transition: 0.3s ease;
+ 
+}
+
+.filterGroup select {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filterGroup select:focus {
+  border-color: #07214b;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.addButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(46%, 1fr));
+  gap: 1.5rem;
+}
+
+.kpiCard {
+  background-color: #f2f7ff;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.03);
+}
+
+.kpiTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2d2d2d;
+  margin-bottom: 0.3rem;
+}
+
+.kpiType {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.kpiActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.deleteIcon {
+  color: red;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.editIcon {
+  color: #007bff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}

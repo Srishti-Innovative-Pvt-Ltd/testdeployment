@@ -1,0 +1,135 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  width: 700px;
+  max-width: 90vw;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2d2d2d;
+}
+
+.closeIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.modalBody {
+  margin-bottom: 2rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+  gap: 1.5rem;
+}
+
+.formGroup,
+.formGroupFull {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroupFull {
+  grid-column: span 2;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input:focus {
+  border-color: #104eb1;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+/* React Select custom classes */
+.selectContainer {
+  font-size: 0.9rem;
+}
+
+.customSelect__control {
+  border-radius: 8px !important;
+  border: 1px solid #ccc !important;
+  min-height: 38px !important;
+  font-size: 0.9rem !important;
+  box-shadow: none !important;
+}
+
+.customSelect__control--is-focused {
+  border-color: #104eb1 !important;
+}
+
+.customSelect__option--is-focused {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .modal {
+    padding: 1.2rem;
+    width: 95vw;
+  }
+
+  .modalHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formGroupFull {
+    grid-column: span 1;
+  }
+
+  .modalFooter {
+    flex-direction: column;
+  }
+}

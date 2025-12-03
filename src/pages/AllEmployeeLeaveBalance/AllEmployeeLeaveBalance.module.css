@@ -1,0 +1,215 @@
+.allEmployeeLeaveBalanceContainer {
+  padding: 10px;
+}
+
+/* Filter Section */
+.allEmployeeLeaveBalanceFilterSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: end;
+}
+
+.allEmployeeLeaveBalanceFilterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.allEmployeeLeaveBalanceFilterGroup label {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  color: #104eb1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.allEmployeeLeaveBalanceFilterGroup select {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.allEmployeeLeaveBalanceFilterGroup select:focus {
+  border-color: #07214b;
+}
+
+.allEmployeeLeaveBalanceDatePickerInput {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #333;
+  width: 100%;
+}
+
+.allEmployeeLeaveBalanceFilterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .allEmployeeLeaveBalanceFilterSection {
+    grid-template-columns: 1fr;
+  }
+
+  .allEmployeeLeaveBalanceFilterButtons {
+    justify-content: flex-start;
+  }
+}
+
+
+/* ---  Card Styles --- */
+.allEmployeeLeaveBalanceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.newLeaveBalanceCard {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(16, 78, 177, 0.2);
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(16, 78, 177, 0.15),
+    inset 0 0 8px rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.newLeaveBalanceCard:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 14px rgba(16, 78, 177, 0.25),
+    inset 0 0 10px rgba(255, 255, 255, 0.25);
+}
+
+.newLeaveBalanceHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(16, 78, 177, 0.15);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.avatarCircle {
+  background: linear-gradient(135deg, #104eb1, #2e7dff);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(16, 78, 177, 0.3);
+}
+
+.newLeaveBalanceHeader h3 {
+  color: #104eb1;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.newLeaveBalanceHeader p {
+  color: #555;
+  font-size: 0.8rem;
+  margin: 2px 0 0 0;
+}
+
+.newLeaveBalanceBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.newLeaveBalanceItem {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(16, 78, 177, 0.05);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.newLeaveBalanceItem span {
+  color: #104eb1;
+  font-weight: 600;
+}
+
+.newLeaveBalanceItem strong {
+  color: #333;
+  font-weight: 700;
+}
+
+.newLeaveBalanceEmpty {
+  text-align: center;
+  color: #888;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* Pagination  */
+.allEmployeeLeaveBalancePagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem; 
+}
+
+/* Left side (Show label + select + text) */
+.allEmployeeLeaveBalancePagination > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem; /* small gap between elements */
+}
+
+/* Right side (Prev / Page / Next) */
+.allEmployeeLeaveBalancePaginationControls {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem; /* small gap between buttons and text */
+}
+
+.allEmployeeLeaveBalancePaginationControls button {
+  padding: 6px 12px;
+  background: #104eb1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.allEmployeeLeaveBalancePaginationControls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.allEmployeeLeaveBalancePaginationControls button:hover:not(:disabled) {
+  background: #07214b;
+}
+
+/* Loading / No Data */
+.allEmployeeLeaveBalanceLoading,
+.allEmployeeLeaveBalanceNoData {
+  text-align: center;
+  padding: 2rem;
+  color: #104eb1;
+  font-weight: 600;
+}

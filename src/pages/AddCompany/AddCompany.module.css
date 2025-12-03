@@ -1,0 +1,90 @@
+.addCompanyWrapper {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.addCompanyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.addCompanyHeader h2 {
+  font-size: 1.5rem;
+  color: #2d2d2d;
+}
+
+.addCompanyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.addCompanyCard {
+  background-color: #f9fbff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.addCompanyCard:hover {
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.addCompanyLogo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: 2px solid #e0e7ff;
+}
+
+.addCompanyName {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2d2d2d;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.addCompanyActions {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.addCompanyDeleteIcon {
+  color: red;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.addCompanyEditIcon {
+  color: #007bff;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .addCompanyGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .addCompanyGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+

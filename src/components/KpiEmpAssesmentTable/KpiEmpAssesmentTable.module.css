@@ -1,0 +1,24 @@
+.kpiTableContainer {
+  width: 100%;
+  padding: 1.5rem;
+  
+}
+
+.kpiTableScroll {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.kpiTableActions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+
+.kpiTableActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem; 
+}

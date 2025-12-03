@@ -1,0 +1,282 @@
+.EmployeePayrollOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.star{
+  color: red;
+}
+
+.EmployeePayrollModal {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 60%;
+  max-width: 800px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.EmployeePayrollModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.EmployeePayrollCloseIcon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.EmployeePayrollFormRow {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.EmployeePayrollInputGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.EmployeePayrollInputGroup label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.EmployeePayrollInputGroup input,
+.EmployeePayrollInputGroup select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.EmployeePayrollValueType {
+  margin-top: 1rem;
+}
+
+.EmployeePayrollValueType label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.EmployeePayrollRadioGroup {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.EmployeePayrollRadioGroup label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+
+.EmployeePayrollFormFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+@media (max-width: 768px) {
+  .EmployeePayrollModal {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .EmployeePayrollFormRow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .EmployeePayrollRadioGroup {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .EmployeePayrollFormFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .EmployeePayrollModal {
+    padding: 1rem;
+  }
+
+  .EmployeePayrollCloseIcon {
+    font-size: 20px;
+  }
+
+  .EmployeePayrollInputGroup input,
+  .EmployeePayrollInputGroup select {
+    font-size: 13px;
+    padding: 0.5rem;
+  }
+
+  .EmployeePayrollRadioGroup label {
+    font-size: 13px;
+  }
+
+  .error {
+    font-size: 11px;
+  }
+}
+
+
+/* Extra styles for sections */
+.section {
+  margin-bottom: 2rem;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #fafafa;
+}
+
+.salaryEntry {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+/* Percentage inline input */
+.percentInput {
+  width: 60px;
+  padding: 4px;
+  margin: 0 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Reimbursement design (from your snippet) */
+.reimbursementBtnGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: start;
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.reimbursementAddBtn,
+.reimbursementRemoveBtn {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-top: 0.3rem;
+}
+
+.blueBtn {
+  background: #007bff;
+  color: white;
+}
+.blueBtn:hover {
+  background: #0056b3;
+}
+
+.redBtn {
+  background: #dc3545;
+  color: white;
+}
+.redBtn:hover {
+  background: #a71d2a;
+}
+
+.reimbursementInfoText {
+  font-size: 14px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.reimbursementModalFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+
+
+.EmployeePayrollModal {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 60%;
+  max-width: 800px;
+  max-height: 90vh;       /* ✅ limit modal height */
+  overflow-y: auto;       /* ✅ enable vertical scroll */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .EmployeePayrollModal {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  .EmployeePayrollFormRow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .EmployeePayrollModal {
+    padding: 1rem;
+  }
+  .EmployeePayrollInputGroup input,
+  .EmployeePayrollInputGroup select {
+    font-size: 13px;
+    padding: 0.5rem;
+  }
+}
+
+
+.disabledGroup {
+  pointer-events: none;  
+  opacity: 0.6; 
+  cursor: not-allowed         
+}
+
+
+
+.errorText {
+  color: hwb(2 11% 11%);      /* red error text */
+  font-size: 0.85rem;  /* slightly smaller */
+  margin-top: 4px;     /* space from input */
+  font-weight: 500;    /* make it stand out */
+}
+

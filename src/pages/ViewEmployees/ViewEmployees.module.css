@@ -1,0 +1,74 @@
+.ViewEmployeesContainer {
+  padding: 20px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.ViewEmployeesTabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.ViewEmployeesTab {
+  padding: 8px 20px;
+  cursor: pointer;
+  color: #888;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+}
+
+.ActiveTab {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.ViewEmployeesTopRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.ViewEmployeesSubheading {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+.ViewEmployeesSearch {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 6px 15px;
+  width: 275px;
+  margin-top: 10px;
+}
+
+.ViewEmployeesSearch input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.ViewEmployeesTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.ViewEmployeesProfileImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ViewEmployeesIcon {
+  font-size: 30px;
+  color: #007bff;
+  cursor: pointer;
+}

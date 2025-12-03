@@ -1,0 +1,189 @@
+.reimbursementModalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+  padding: 20px; /* for small screens */
+}
+.reimbursementFieldWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+.reimbursementError {
+  position: absolute;
+  bottom: -16px; /* place error below the input */
+  left: 0;
+  color: red;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.star{
+  color: red;
+}
+
+.reimbursementModal {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 791px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto; /* scroll if content overflows */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.reimbursementModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.reimbursementCloseIcon {
+  cursor: pointer;
+  font-size: 22px;
+  color: #444;
+}
+
+.reimbursementModalBody {
+  margin-top: 20px;
+}
+
+.reimbursementLabel {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.reimbursementSelect,
+.reimbursementInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  font-size: 15px;
+  margin-top: 0.5rem;
+}
+.reimbursementSelect {
+  appearance: none;          
+  -webkit-appearance: none;  
+  -moz-appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") 
+              no-repeat right 1rem center;
+  background-color: #fff;    
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 2.5rem 10px 10px; /* same vertical padding as input */
+  font-size: 15px; 
+  cursor: pointer;
+  flex: 1;
+  margin-top: 0.5rem;
+  height: 43px; /* same height as inputs and buttons */
+  box-sizing: border-box;
+}
+
+
+/* Make placeholder bold */
+.reimbursementInput::placeholder,
+.reimbursementSelect::placeholder {
+ 
+  color: #000000;
+}
+
+.reimbursementRow {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.reimbursementBtnGroup {
+  display: flex;
+  flex-direction: row;   
+  gap: 8px;              /* spacing between buttons */
+  align-items: center;
+  justify-content: start;
+  min-width: 100px;      /* reserve space so inputs don’t shrink */
+  flex-shrink: 0;        /* stop button group from squeezing inputs */
+}
+
+.reimbursementAddBtn,
+.reimbursementRemoveBtn {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; 
+  margin-top: 0.3rem;
+}
+
+.blueBtn {
+  background: #007bff;
+  color: white;
+}
+.blueBtn:hover {
+  background: #0056b3;
+}
+
+.redBtn {
+  background: #dc3545;
+  color: white;
+}
+.redBtn:hover {
+  background: #a71d2a;
+}
+
+.reimbursementInfoText {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.reimbursementModalFooter {
+  display: flex;
+  justify-content: center; /* center button */
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .reimbursementRow {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .reimbursementSelect,
+  .reimbursementInput {
+    width: 100%;
+  }
+
+  .reimbursementAddBtn,
+  .reimbursementRemoveBtn {
+    width: 50px;
+    align-self: flex-start;
+  }
+}
+
+
+
+

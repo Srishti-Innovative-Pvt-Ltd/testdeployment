@@ -1,0 +1,59 @@
+.comparisonStatsContainer {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  max-height: 400px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.comparisonColumn {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.comparisonTitle {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.comparisonMetricRow {
+  display: grid;
+  grid-template-columns: 1fr 2fr 30px;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.comparisonProgressWrapper {
+  background: #e5ecf6;
+  border-radius: 8px;
+  height: 6px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 8px;
+}
+
+.comparisonProgressBar {
+  background: #007bff;
+  height: 100%;
+  border-radius: 8px;
+  width: 0%; /* Start from 0 */
+  transition: width 1s ease-out;
+}
+
+.animateProgress {
+  animation: growProgress 1s ease-out forwards;
+}
+
+@keyframes growProgress {
+  to {
+    width: var(--progress-width);
+  }
+}

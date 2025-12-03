@@ -1,0 +1,219 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  color: var(--font-color-base);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 11;
+  transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.logo {
+  width: 100%;
+  height: 3rem;
+  margin: 1rem 0;
+}
+.logo img {
+  width: 100%;
+  margin-top: -5px;
+  margin-left: -0.6rem;
+}
+
+.sidebarToggleList {
+  list-style-type: none;
+  padding: 0;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+}
+
+.sidebarToggleListIcon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #0460cd;
+  position: absolute;
+  right: -2.5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebarList {
+  list-style-type: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.sidebarList img {
+  width: 1.2rem;
+}
+
+.sidebar li {
+  cursor: pointer;
+}
+
+.sidebar.mobileHidden {
+  transform: translateX(-100%);
+}
+
+.sidebar.mobileVisible {
+  transform: translateX(0);
+}
+
+.sidebar.collapsed {
+  width: 5rem;
+  padding: 1rem;
+}
+
+.sidebar.collapsed .sidebarList span,
+.sidebar.collapsed .sidebarToggleList span {
+  display: none;
+}
+.sidebar.collapsed .sidebarList span,
+.sidebar.collapsed .sidebarToggleList .serachBar {
+  display: none;
+}
+
+.menuToggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.scrollableMenu {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .menuToggle {
+    display: none;
+  }
+  .sidebar {
+    transform: none !important;
+    position: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebarToggleListIcon {
+    display: none;
+  }
+}
+
+/* employee info card */
+
+.updateCard {
+  display: flex;
+  align-items: center;
+  background-color: #f9fbff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #e4e9f2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.updateCard:hover {
+  background-color: #eef5ff;
+}
+
+.alertIcon {
+  background-color: #ffe5e5;
+  padding: 0.3rem;
+  border-radius: 50%;
+  color: #d93025;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    margin-right: 0.6rem;
+}
+
+.updateText {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+.collapsedCard {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.0rem;
+  margin-right: 0.9rem;
+  background: none;
+  box-shadow: none;
+  border: none;
+  justify-content: flex-start;
+  width: auto;
+}
+
+
+.submenuItem {
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  border-radius: 0.5rem;
+  color: #555;
+  transition: all 0.2s ease-in-out;
+}
+
+.submenuItem:hover {
+  background-color: #f3f7ff;
+  color: #0460cd;
+}
+
+.activeParentItem {
+  background-color: #eaf3ff;
+  border-left: 4px solid #1a73e8;
+  padding-left: 0.8rem;
+  font-weight: 600;
+  color: #1a73e8;
+  border-radius: 0.4rem;
+      padding: 0.2rem;
+}
+
+.activeSubmenuItem {
+  color: #1a73e8;
+  font-weight: 600;
+  
+}
+
+.activeDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #1a73e8;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+
+.sidebarList li:hover {
+  background-color: #f3f7ff;
+  color: #0460cd;
+  border-radius: 0.5rem;
+  /* transition: all 0.2s ease-in-out; */
+}
+
+

@@ -1,0 +1,68 @@
+.jobDetailsSideBarContainer {
+  background-color: #f1f7fd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0;
+  margin-top: 1.4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jobDetailsSideBarSection {
+  margin-bottom: 2rem;
+}
+
+.jobDetailsSideBarHeading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2e3a59;
+  margin-bottom: 1.2rem;
+}
+
+.jobDetailsSideBarItem {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.jobDetailsSideBarIcon {
+  font-size: 1.5rem;
+  color: #2282f0;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.jobDetailsSideBarLabel {
+  font-size: 0.9rem;
+  color: #2282f0;
+  margin-bottom: 2px;
+}
+
+.jobDetailsSideBarValue {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jobDetailsSideBarContainer {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .jobDetailsSideBarItem {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .jobDetailsSideBarIcon {
+    font-size: 1.3rem;
+  }
+
+  .jobDetailsSideBarLabel,
+  .jobDetailsSideBarValue {
+    font-size: 0.9rem;
+  }
+}

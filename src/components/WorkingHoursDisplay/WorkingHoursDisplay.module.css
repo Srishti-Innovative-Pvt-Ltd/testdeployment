@@ -1,0 +1,44 @@
+.WorkingHoursDisplayContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  flex-wrap: wrap;
+}
+
+.WorkingHoursDisplayCard {
+  flex: 1;
+  min-width: 180px;
+  padding: 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  color: white;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scale(1);
+}
+
+.WorkingHoursDisplayCard:hover {
+  transform: scale(1.04); /* zoom-in on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.WorkingHoursDisplayLabel {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  opacity: 0.9;
+  color: rgb(252, 252, 252);
+}
+
+.WorkingHoursDisplayValue {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}

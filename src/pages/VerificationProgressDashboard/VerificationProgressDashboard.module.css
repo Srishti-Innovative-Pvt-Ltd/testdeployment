@@ -1,0 +1,53 @@
+.verificationDashboardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px); /* adjusted for header in DashboardLayout */
+  background-color: #f6f8fa;
+}
+
+.verificationCard {
+  background: #ffffff;
+  padding: 60px 80px;
+  border-radius: 25px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15),
+              inset 0 -3px 10px rgba(255,255,255,0.5);
+  text-align: center;
+  margin-bottom: 8rem
+}
+
+.verificationIconWrapper {
+  margin-bottom: 20px;
+}
+
+.verificationIconCircle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #ffe8d6, #ffb380);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 12px 25px rgba(255,140,0,0.4);
+  margin: 0 auto;
+}
+
+.verificationIcon {
+  font-size: 90px;
+  color: #ff6600;
+}
+
+.verificationTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.verificationSubtitle {
+  font-size: 18px;
+  color: #666666;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.5;
+}

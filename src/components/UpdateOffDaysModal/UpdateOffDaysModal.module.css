@@ -1,0 +1,132 @@
+.updateOffDaysOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem; /* prevent modal touching screen edges */
+}
+
+.updateOffDaysModal {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 480px;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.updateOffDaysHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  background: #0d6efd;
+  padding: 0.75rem 1rem;
+}
+
+.updateOffDaysCloseIcon {
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.updateOffDaysBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.updateOffDaysRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.updateOffDaysGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.updateOffDaysGroup label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #000;
+}
+
+.updateOffDaysInput, 
+.updateOffDaysTextarea {
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid #104eb1;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  width: 100%;
+}
+
+.updateOffDaysTextarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+.updateOffDaysInput:focus,
+.updateOffDaysTextarea:focus {
+  border-color: #07214b;
+}
+
+.updateOffDaysError {
+  font-size: 0.75rem;
+  color: #b30021;
+  margin-top: 0.2rem;
+}
+
+.updateOffDaysFooter {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 600px) {
+  .updateOffDaysModal {
+    max-width: 100%;
+    border-radius: 0; /* use full screen modal for mobile */
+    height: 100%;
+  }
+
+  .updateOffDaysOverlay {
+    padding: 0; /* remove overlay padding for full screen modal */
+  }
+
+  .updateOffDaysRow {
+    flex-direction: column; /* stack fields vertically */
+    gap: 0.75rem;
+  }
+
+  .updateOffDaysBody {
+    padding: 1rem 0.75rem;
+  }
+
+  .updateOffDaysHeader {
+    font-size: 0.95rem;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .updateOffDaysCloseIcon {
+    font-size: 1.1rem;
+  }
+
+  .updateOffDaysFooter {
+    padding: 0.75rem;
+  }
+}

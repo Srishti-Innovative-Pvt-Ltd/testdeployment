@@ -1,0 +1,70 @@
+.hrPolicyModal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.hrPolicyModal-modal {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: 600px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hrPolicyModal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hrPolicyModal-hrLine {
+  border: none;
+  border-top: 1px solid #817e7e;
+  margin: 10px 0 20px;
+}
+
+.hrPolicyModal-closeIcon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hrPolicyModal-formGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hrPolicyModal-input {
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.hrPolicyModal-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.hrPolicyModal-buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}

@@ -1,0 +1,114 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  
+}
+
+.modal {
+  background: white;
+  border-radius: 1rem;
+  width: 45rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.modalHeader {
+  position: sticky;
+  top: 0;                     /* stick to top inside modal */
+  z-index: 10;                /* ensure it stays above cards */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem 0.5rem 0 0; /* rounded top only */
+}
+.modalTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.titleIcon {
+  font-size: 1.5rem;
+}
+
+.closeIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cardContainer {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid #0d6efd;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.cardIndex {
+  font-weight: 600;
+  color: #333;
+}
+
+.cardBody p {
+  margin: 0.35rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.statusBadge {
+  padding: 0.3rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 80px;
+}
+
+.approved {
+  background-color: #d4edda;
+  color: #28a745;
+}
+
+.pending {
+  background-color: #fff3cd;
+  color: #ffc107;
+}
+
+.rejected {
+  background-color: #f8d7da;
+  color: #dc3545;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+  padding: 2rem 0;
+}

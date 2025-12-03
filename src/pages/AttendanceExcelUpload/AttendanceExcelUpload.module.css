@@ -1,0 +1,65 @@
+.attendanceUploadContainer {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: auto;
+  font-family: sans-serif;
+      margin-top: 0rem;
+}
+
+.star{
+  color: red;
+}
+.uploadSection {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.uploadRadioGroupWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: #1b2c45;
+}
+
+.uploadLabelInline {
+  display: block;
+  font-weight: 600;
+  color: #1b2c45;
+  white-space: nowrap;
+    margin-bottom: 1rem;
+}
+.uploadRadioGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.925rem;
+  color: #1b2c45;
+}
+
+.uploadRadioLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.uploadFileInput {
+  padding: 0.5rem;
+  background: #f1f1f1;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.uploadButtonWrapper {
+  margin-top: 2rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}

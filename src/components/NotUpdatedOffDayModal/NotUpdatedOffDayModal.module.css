@@ -1,0 +1,125 @@
+.notUpdatedOffDayModal__overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.notUpdatedOffDayModal__container {
+  background: #ffffff;
+  width: 95%;
+  max-width: 600px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.25s ease;
+  overflow: hidden;
+}
+
+.notUpdatedOffDayModal__header {
+  background-color: #0d6efd;
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.notUpdatedOffDayModal__closeIcon {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.notUpdatedOffDayModal__body {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 1rem 1.25rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.notUpdatedOffDayModal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.notUpdatedOffDayModal__card {
+  display: flex;
+  align-items: center;
+  background-color: #f4f8ff;
+  border: 1px solid #dce5f0;
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.notUpdatedOffDayModal__card:hover {
+  background-color: #e6f0ff;
+}
+
+.notUpdatedOffDayModal__index {
+  min-width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 0.75rem;
+}
+
+.notUpdatedOffDayModal__dateInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.notUpdatedOffDayModal__label {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-bottom: 0.2rem;
+}
+
+.notUpdatedOffDayModal__date {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.notUpdatedOffDayModal__empty {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

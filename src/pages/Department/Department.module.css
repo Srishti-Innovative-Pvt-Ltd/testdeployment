@@ -1,0 +1,116 @@
+.departmentWrapper {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  color: #2d2d2d;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(46%, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #f2f7ff;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.03);
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.deleteIcon {
+  color: red;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.editIcon {
+  color: #007bff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+.filterSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.filterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 290px;
+  flex: 1;
+}
+
+
+.filterGroup label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: white;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  color: #104eb1;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.dropdown {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000000;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  max-width: 290px;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown:focus {
+  border-color: #07214b;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.filterButtons button {
+  margin-top: -45px; 
+}

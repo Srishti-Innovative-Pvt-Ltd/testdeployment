@@ -1,0 +1,14 @@
+.previewLink {
+  color: #007bff; /* Blue color */
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-bottom: 5px;
+  transition: color 0.2s ease;
+}
+
+.previewLink:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}

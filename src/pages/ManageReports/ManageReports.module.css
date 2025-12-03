@@ -1,0 +1,165 @@
+.container {
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Table styles (extend if needed) */
+.statusPending {
+  background-color: #fff8e1;
+  color: #f0a500;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.statusApproved {
+  background-color: #e0f7e9;
+  color: #2e7d32;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.statusRejected {
+  background-color: #fdecea;
+  color: #d32f2f;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.eyeIcon {
+  font-size: 1.7rem;
+  color: #2b7de9;
+  cursor: pointer;
+}
+
+/* Big Toggle Button */
+/* Reusable Glass 3D Button Base */
+.bigToggleButton {
+  width: 100px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.bigToggleButton::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.3),
+    transparent 70%
+  );
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none;
+}
+
+.bigToggleButton:hover::before {
+  opacity: 1;
+}
+
+/* Status-based colors */
+.buttonApproved {
+  background: linear-gradient(135deg, #ffe0e0, #ffcccc);
+  color: #b71c1c;
+}
+
+.buttonApproved:hover {
+  background: linear-gradient(135deg, #ffc9c9, #ffb3b3);
+}
+
+.buttonRejected {
+  background: linear-gradient(135deg, #d0f7e8, #b2f5da);
+  color: #1b5e20;
+}
+
+.buttonRejected:hover {
+  background: linear-gradient(135deg, #b3f2c9, #9ff5c4);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .bigToggleButton {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .eyeIcon {
+    font-size: 16px;
+  }
+}
+
+
+/* --- Filter Section --- */
+.filterSection {
+  display: flex; /* Changed from grid */
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: end;
+  margin: 1.5rem 0;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 260px; 
+}
+
+.filterGroup label {
+ position: absolute;
+  top: -10px;
+  left: 10px;
+  background: white;
+  padding: 0 5px;
+  font-size: 0.65rem;
+  color: #104eb1;
+  font-weight: 500;
+ 
+}
+
+.filterGroup select {
+  padding: 8px 10px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.4rem;
+  margin-left: 0.5rem; /* Pushed closer to filters */
+}

@@ -1,0 +1,104 @@
+.InductionTrackProgressContainer {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.InductionTrackProgressTitle {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.InductionTrackProgressAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.InductionTrackProgressStatusWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.InductionTrackProgressBarWrapper {
+  background-color: #eee;
+  height: 6px;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.InductionTrackProgressBarFill {
+  height: 100%;
+  background-color: #007bff;
+}
+
+.InductionTrackProgressViewIcon {
+  font-size: 30px;
+  color: #007bff;
+  cursor: pointer;
+}
+.InductionTrackProgressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.InductionTrackProgressSearch {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  max-width: 100%;
+}
+.InductionTrackProgressSearchWrapper {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 6px 12px;
+  width: 300px;
+  transition: border 0.3s ease;
+}
+
+.InductionTrackProgressSearchWrapper:hover,
+.InductionTrackProgressSearchWrapper:focus-within {
+  border-color: #888;
+}
+
+.InductionTrackProgressSearchIcon {
+  font-size: 25px;
+  color: #888;
+  margin-right: 8px;
+  display: inline-block;
+  min-width: 20px;
+}
+
+
+.InductionTrackProgressSearchInput {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+}
+@media (max-width: 768px) {
+  .InductionTrackProgressTitle {
+    font-size: 20px;
+  }
+
+  .InductionTrackProgressSearchWrapper {
+    max-width: 100%;
+  }
+
+  .InductionTrackProgressContainer {
+    padding: 16px;
+  }
+}

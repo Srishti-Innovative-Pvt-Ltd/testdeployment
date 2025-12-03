@@ -1,0 +1,55 @@
+.filterSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: end;
+  margin-top: 2rem;
+}
+
+.filterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterGroup label {
+  
+  top: -10px;
+  left: 12px;
+  background: white;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  color: #104eb1;
+  font-weight: 500;
+  transition: 0.3s ease;
+  
+}
+
+.filterGroup select,
+.datePickerInput {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.filterGroup select:focus,
+.datePickerInput:focus {
+  border-color: #07214b;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+
+

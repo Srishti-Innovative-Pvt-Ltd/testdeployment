@@ -1,0 +1,238 @@
+.arid_container {
+  padding: 24px;
+  width: 100%;
+}
+
+.arid_card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.arid_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.arid_fieldGroup {
+  flex: 1 1 calc(33.33% - 24px);
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background-color: #f0f6ff;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #d9e6f2;
+  min-width: 250px;
+}
+
+.arid_checkboxWrap {
+  margin-top: 4px;
+}
+
+.arid_checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.arid_fieldContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.arid_label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.arid_value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.arid_file {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.arid_buttonRow {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.redBorder {
+  border: 2px solid #e74c3c !important;
+  background-color: #fff6f6;
+}
+
+/* Preview Modal Styles */
+.previewOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.previewContainer {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.previewHeader {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.previewTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80%;
+}
+
+.previewClose {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #777;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previewClose:hover {
+  color: #333;
+}
+
+.previewBody {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+}
+
+.pdfPreview {
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+  border: none;
+}
+
+.imagePreviewContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: auto;
+}
+
+.imagePreview {
+  max-width: 100%;
+  max-height: calc(90vh - 100px);
+  object-fit: contain;
+}
+
+.previewButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .arid_fieldGroup {
+    flex: 1 1 100%;
+  }
+  
+  .previewContainer {
+    width: 95%;
+    height: 95%;
+  }
+  
+  .previewTitle {
+    max-width: 70%;
+  }
+}
+
+
+.noDataContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.noDataMessage {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-shadow: 1px 1px 1px #aaa;
+  font-family: Arial, sans-serif;
+}
+
+.pdfPreviewMessage {
+  font-size: 1rem;
+  color: #555;
+  background-color: #f8f9fa;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 420px;
+  margin: 2rem auto;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.pdfPreviewMessage a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pdfPreviewMessage a:hover {
+  text-decoration: underline;
+  color: #004999;
+}
+
+.verifiedMessage {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+}

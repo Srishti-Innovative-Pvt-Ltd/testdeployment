@@ -1,0 +1,8 @@
+.tableSpacing {
+  margin-top: 1rem;
+}
+.masterCheckbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

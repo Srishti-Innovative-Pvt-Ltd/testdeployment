@@ -1,0 +1,76 @@
+.employeeListContainer {
+  padding: 10px;
+}
+
+.employeeListHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.employeeListFilterSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: end;
+}
+
+
+
+.employeeListFilterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.employeeListFilterGroup label {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  color: #104eb1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.employeeListFilterGroup select {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.employeeListFilterGroup select:focus {
+  border-color: #07214b;
+}
+
+.employeeListFilterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.employeeListEditIcon {
+  font-size: 2rem;
+  color: #2196f3;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .employeeListFilterSection {
+    grid-template-columns: 1fr;
+  }
+
+  .employeeListFilterButtons {
+    justify-content: flex-start;
+  }
+}

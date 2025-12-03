@@ -1,0 +1,166 @@
+.companyModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.companyModalContent {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.companyModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.companyModalHeader h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.companyCloseButton {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.companyForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.companyRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.companyInputGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.companyInputGroup label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+.companyInput {
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.star{
+  color: red;
+}
+
+.companyInputparentCompany {
+  appearance: none;          
+  -webkit-appearance: none;  
+  -moz-appearance: none;     
+  background: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") 
+              no-repeat right 1rem center;  
+  background-color: #fff;    
+  border: 1px solid #ccc;
+  border-radius: 6px;
+ padding: 0.8rem 3rem 0.8rem 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.companySubmitRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.companyError {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.fileInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.companyInput[type="file"] {
+  padding-right: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.previewOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.previewContent {
+  background: #fff;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.previewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+
+.previewClose {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.previewImage {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.previewLinkWrapper {
+  margin: 8px 0 4px 0; 
+}
+
+.previewLink {
+  font-size: 0.85rem;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}

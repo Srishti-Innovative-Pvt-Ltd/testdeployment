@@ -1,0 +1,101 @@
+.AddEmployeeShiftModal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.AddEmployeeShiftModal_modal {
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  box-sizing: border-box;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.AddEmployeeShiftModal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.AddEmployeeShiftModal_closeButton {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.AddEmployeeShiftModal_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fullWidth {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rowTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.AddEmployeeShiftModal_formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.AddEmployeeShiftModal_timeRow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.AddEmployeeShiftModal_timeRow input,
+.AddEmployeeShiftModal_timeRow select {
+  width: 60px;
+  padding: 6px;
+  text-align: center;
+}
+.star{
+  color: red;
+}
+
+.AddEmployeeShiftModal_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.error {
+  color: #d93025; 
+  font-size: 0.75rem;
+  margin-top: 4px;
+  display: block;
+}
+
+
+@media (max-width: 600px) {
+  .rowTwo {
+    grid-template-columns: 1fr;
+  }
+}

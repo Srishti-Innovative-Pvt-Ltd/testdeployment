@@ -1,0 +1,50 @@
+.exitModal__overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.exitModal__container {
+  background: white;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.exitModal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2d2d2d;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.75rem;
+}
+
+.exitModal__closeIcon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.exitModal__content {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.exitModal__content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.exitModal__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

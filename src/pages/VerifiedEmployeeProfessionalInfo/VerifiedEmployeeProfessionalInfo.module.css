@@ -1,0 +1,24 @@
+.VerifiedEmployeeProfessionalInfoWrapper {
+  padding: 24px;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+.VerifiedEmployeeProfessionalInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  line-height: 1.8;
+}
+
+.VerifiedEmployeeProfessionalInfoGrid p {
+  font-size: 13px;
+  color: gray;
+  margin: 0;
+}
+
+.VerifiedEmployeeProfessionalInfoGrid h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 4px 0 16px;
+}

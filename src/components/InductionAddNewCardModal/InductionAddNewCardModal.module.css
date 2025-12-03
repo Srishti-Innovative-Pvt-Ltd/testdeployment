@@ -1,0 +1,66 @@
+.InductionAddNewCardModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.InductionAddNewCardModal__Modal {
+  background: white;
+  border-radius: 16px;
+  width: 400px;
+  max-width: 90%;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.InductionAddNewCardModal__Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.InductionAddNewCardModal__Title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.InductionAddNewCardModal__CloseIcon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.InductionAddNewCardModal__Body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.InductionAddNewCardModal__Label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.InductionAddNewCardModal__Input {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.InductionAddNewCardModal__ButtonWrapper {
+  display: flex;
+  justify-content: center;
+}
+.errorText {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 4px;
+}

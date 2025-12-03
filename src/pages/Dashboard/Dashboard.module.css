@@ -1,0 +1,81 @@
+.cardImageContainer {
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+}
+
+.cardImageContainer img {
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0460cd;
+}
+
+.card1Title {
+  color: var(--font-color-base);
+  margin-left: 0.5rem;
+}
+
+.card1Title p {
+  margin: 0;
+}
+
+.cardSubTitle {
+  font-size: 0.75rem;
+}
+
+.actionIconContainer1 {
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  background-color: #fde6e7;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.actionIconContainer2 {
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  background-color: #e8f0fd;
+  color: #0566d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.launchContainer {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #eff1f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.leaveCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buzzContainer {
+  border: 1px solid rgb(205, 203, 203);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.buzzScrollContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}

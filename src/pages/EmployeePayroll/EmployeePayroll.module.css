@@ -1,0 +1,95 @@
+.EmployeePayrollContainer {
+  padding: 2rem;
+}
+
+.EmployeePayrollHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  
+}
+.EmployeePayrollHeader h2{
+    font-size: 1.5rem;
+  color: #2d2d2d;
+}
+
+
+.EmployeePayrollEditIcon {
+  font-size: 30px;
+  color: #007bff;
+  cursor: pointer;
+}
+.EmployeePayrollTableWrapper {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden; 
+}
+
+.filterSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-left: 0.9rem; 
+}
+
+.filterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 290px;
+  flex: 1;
+}
+
+.filterGroup label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: white;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  color: #104eb1;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.dropdown {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000000;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  max-width: 290px;
+  transition: border-color 0.3s ease;
+}
+   
+.dropdown:focus {
+  border-color: #07214b;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.5rem; 
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filterButtons button {
+  margin-top: -45px;
+}
+
+
+.deleteIcon {
+  color: red;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-left: 0.2rem;
+}

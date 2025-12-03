@@ -1,0 +1,29 @@
+.tableContainer {
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow-x: auto;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.responsiveTable {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.responsiveTable th,
+.responsiveTable td {
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.actionColumn {
+  min-width: 120px;
+  text-align: center;
+}
+
+

@@ -1,0 +1,119 @@
+.employeeImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customImageContainer {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  border: 1px solid rgb(218, 218, 218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.customImageContainer img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 1px solid rgb(218, 218, 218);
+  object-fit: cover;
+}
+
+.customAddIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: #0460cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hintText {
+  font-size: 0.85rem;
+  color: #6c757d;
+  line-height: 1.4;
+}
+.errorText {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+.AddEmployeelargeRadio {
+  padding: 5px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  accent-color: #0460cd;
+}
+
+.AddEmployeeEnableDisable {
+  margin-left: 8px;
+  margin-top: -2px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -4px; 
+}
+.star{
+  color: red;
+}
+
+
+
+.passwordInputContainer {
+  position: relative;
+}
+
+.passwordToggleIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6c757d;
+  font-size: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+/* Adjust input padding to prevent text overlap with icon */
+.inputFormStyle {
+  padding-right: 35px !important;
+}  
+
+/* Remove Bootstrap's native password toggle if present */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none !important;
+}
+
+label{
+  font-size: 1rem!important;
+}
+
+
+.AddEmployeeSelect {
+  appearance: none;          
+  -webkit-appearance: none;  
+  -moz-appearance: none;     
+  background: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") 
+              no-repeat right 1rem center;  
+  background-color: #fff;    
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.6rem 3rem 0.6rem 1rem; 
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%; /* Ensure it takes full width */
+}

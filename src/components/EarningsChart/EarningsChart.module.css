@@ -1,0 +1,29 @@
+.earningsContainer {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+.chartTitle {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tooltip {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chartResponsiveWrapper {
+  width: 100%;
+  overflow-x: auto; 
+}
+
+.chartInner {
+  min-width: 700px; 
+  height: 300px;
+}

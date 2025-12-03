@@ -1,0 +1,132 @@
+.header {
+  background: linear-gradient(to right, #0572e2, #022281);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 18rem;
+  width: 100%;
+  min-height: 10vh;
+  position: fixed;
+  z-index: 1;
+}
+
+.collapsedHeader {
+  padding-left: 6rem !important; /* matches collapsed sidebar */
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+}
+.headerTitle{
+  display:flex;
+  align-items:center;
+}
+
+.notificationIcon {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.profileWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  position: relative; /* make this the anchor for dropdown */
+}
+.displayName {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  white-space: nowrap;
+}
+
+.profileImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-right: 1.2rem;
+}
+
+.profileImage:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .header {
+    padding: 1rem 1rem 1rem 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .displayName {
+    display: none; /* hide role text on very small screens */
+  }
+}
+
+
+
+
+
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;          
+  right: 0;            
+  margin-top: 0.2rem;  /* small gap below the image */
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+  min-width: 180px;
+  overflow: hidden;
+  animation: fadeInUp 0.25s ease;
+}
+/* Animation for dropdown */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdownItem:hover {
+  background: #f5f7fa;
+  color: #0572e2; /* matches your header gradient */
+}
+
+

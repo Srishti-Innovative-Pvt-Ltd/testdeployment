@@ -1,0 +1,232 @@
+.EmployeeDataTablePageContainer {
+  padding: 20px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.EmployeeDataTablePageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.EmployeeDataTablePageSearch {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 6px 15px;
+  width: 275px;
+}
+
+.EmployeeDataTablePageSearch input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.EmployeeDataTablePageTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.EmployeeDataTablePageProfileImage {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.EmployeeDataTablePageIcon {
+  font-size: 28px;
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.EmployeeDataTablePageActionIcons {
+ display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 10px;
+  padding-left: -5px; 
+}
+
+.EmployeeDataTablePageStatusDot {
+  font-weight: 500;
+  display: inline-block;
+}
+
+.Completed {
+  color: green;
+  text-shadow: 0 0 2px rgba(0, 128, 0, 0.4);
+}
+
+.Pending {
+  color: orange;
+  text-shadow: 0 0 2px rgba(255, 165, 0, 0.4);
+}
+
+.Rejected{
+  color: red;
+  text-shadow: 0 0 2px rgba(255, 0, 0, 0.4);
+}
+
+.EmployeeDataTablePageToggle {
+  padding: 6px 20px;
+  border-radius: 25px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* .EmployeeDataTablePage{
+    font-size: larger;
+}  
+
+
+/* Toggle wrapper */
+.EmployeeDataTablePageToggleWrapper {
+  width: 108px;
+  height: 36px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  gap: 12px;
+}
+
+.EmployeeDataTablePageToggleIcon {
+  font-size: 20px;
+  width: 30px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  transition: left 0.3s ease;
+}
+
+.Active .EmployeeDataTablePageToggleIcon {
+  left: calc(100% - 32px);
+  color: #0a9c1d; 
+}
+
+.Inactive .EmployeeDataTablePageToggleIcon {
+  left: 2px;
+  color: #c21616; 
+}
+
+.EmployeeDataTablePageToggleText {
+  flex: 1;
+  text-align: center;
+  font-weight: 500;
+}
+.Active .EmployeeDataTablePageToggleText {
+  margin-left: -14px;
+}
+
+.Inactive .EmployeeDataTablePageToggleText {
+  margin-right: -17px;
+}
+.Active {
+  background-color: #0a9c1d;
+  color: white;
+}
+
+.Inactive {
+  background-color: #b90c0c;
+  color: #ffffff;
+}
+
+.ActiveIcon {
+  background-color: #ffffff;
+  color: #0a9c1d;
+  box-shadow: 0 0 5px rgba(10, 156, 29, 0.4);
+}
+
+.InactiveIcon {
+  background-color: #ffffff;
+  color: #888888;
+  box-shadow: 0 0 5px rgba(100, 100, 100, 0.3);
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .EmployeeDataTablePageContainer {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .EmployeeDataTablePageHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .EmployeeDataTablePageSearch {
+    width: 100%;
+  }
+
+  .EmployeeDataTablePageSearch input {
+    font-size: 13px;
+  }
+
+  .EmployeeDataTablePageIcon {
+    font-size: 24px;
+  }
+
+  .EmployeeDataTablePageToggleWrapper {
+    width: 100px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .EmployeeDataTablePageToggleText {
+    font-size: 13px;
+  }
+
+  .EmployeeDataTablePageProfileImage {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .EmployeeDataTablePageToggleWrapper {
+    width: 95px;
+    height: 32px;
+    gap: 10px;
+  }
+
+  .EmployeeDataTablePageToggleIcon {
+    font-size: 18px;
+    width: 26px;
+    height: 24px;
+    top: 4px;
+  }
+
+  .EmployeeDataTablePage {
+    font-size: medium;
+  }
+
+  .EmployeeDataTablePageSearch {
+    padding: 4px 10px;
+  }
+}
+
+

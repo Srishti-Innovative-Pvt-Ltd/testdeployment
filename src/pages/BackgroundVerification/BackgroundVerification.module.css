@@ -1,0 +1,149 @@
+.BackgroundVerificationFormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+.star{
+  color: red;
+}
+
+.BackgroundVerificationGrid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.BackgroundVerificationGrid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.BackgroundVerificationCriminalSection {
+  margin-top: 2rem;
+}
+
+.BackgroundVerificationFormGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.BackgroundVerificationFormGroup label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.BackgroundVerificationFormInput {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.BackgroundVerificationRadioGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.BackgroundVerificationRadioOptions {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.BackgroundVerificationRadioGroup > label:first-child {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+textarea.BackgroundVerificationFormInput {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.BackgroundVerificationFooterButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.BackgroundVerificationError {
+  font-size: 0.85rem;
+  color: red;
+  margin-top: 4px;
+}
+
+.BackgroundVerificationUploadWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.BackgroundVerificationEyeIcon {
+  font-size: 22px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .BackgroundVerificationGrid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .BackgroundVerificationGrid3,
+  .BackgroundVerificationGrid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .BackgroundVerificationRadioOptions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .BackgroundVerificationFooterButtons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .BackgroundVerificationGrid3,
+  .BackgroundVerificationGrid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .BackgroundVerificationRadioOptions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .BackgroundVerificationFooterButtons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .BackgroundVerificationFormContainer {
+    padding: 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .BackgroundVerificationFormInput {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+.BackgroundVerificationFormInput,
+.BackgroundVerificationUploadWithIcon input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.BackgroundVerificationUploadWithIcon {
+  flex-wrap: wrap;
+}
+
+

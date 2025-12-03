@@ -1,0 +1,89 @@
+.candidateModal__overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.candidateModal__container {
+  background: #fff;
+  border-radius: 10px;
+  width: 640px; 
+  max-width: 95%; 
+  padding: 32px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.candidateModal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.candidateModal__title {
+  margin: 0;
+  font-size: 22px;
+  color: #111827;
+}
+
+.candidateModal__close {
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.candidateModal__message {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+.candidateModal__buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.candidateModal__button {
+  min-width: 200px;
+}
+@media (max-width: 768px) {
+  .candidateModal__container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .candidateModal__title {
+    font-size: 18px;
+  }
+
+  .candidateModal__message {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .candidateModal__buttonGroup {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .candidateModal__button {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .candidateModal__close {
+    font-size: 24px;
+  }
+
+  .candidateModal__container {
+    padding: 16px;
+  }
+}  

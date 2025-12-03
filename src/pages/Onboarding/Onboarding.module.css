@@ -1,0 +1,18 @@
+.OnboardingPageSearch {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 6px 15px;
+  width: 275px;
+}
+
+.OnboardingPageSearch input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  flex: 1;
+  font-size: 14px;
+  width: 100%;
+}
+

@@ -1,0 +1,59 @@
+.chartStatsWrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.chartWrapper {
+  flex: 1 1 600px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.statsWrapper {
+  flex: 1 1 400px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chartStatsWrapper > div > * {
+  flex: 1;
+}
+
+
+
+/* .tableWrapper {
+  width: 100%;
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.performance-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+.performance-table th,
+.performance-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+}
+
+.performance-table th {
+  background-color: #f4f4f4;
+}
+
+.tableWrapper {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+ */

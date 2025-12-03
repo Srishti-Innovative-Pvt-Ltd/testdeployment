@@ -1,0 +1,132 @@
+.interviewModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.interviewModalContent {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.interviewModalTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.interviewModalField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.interviewModalField label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.interviewModalInput,
+.interviewModalTextarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.interviewModalTextarea {
+  min-height: 60px;
+}
+
+.interviewModalEditor {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 12px;
+  min-height: 100px;
+  font-size: 14px;
+}
+
+.interviewModalButtonWrapper {
+  text-align: center;
+  margin-top: 16px;
+}
+
+
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.toolbar button {
+  background: #f0f0f0;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.toolbar button:hover {
+  background: #e0e0e0;
+}
+
+.toolbar button:active {
+  background: #ccc;
+}
+
+
+.ProseMirror {
+  white-space: pre-wrap;
+
+}
+.interviewModalEditor .ProseMirror {
+  color: #000 !important;
+}
+
+
+
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.closeButton:hover {
+  color: #000;
+}
+
+.interviewModalContent {
+  position: relative; 
+}
+
+
+
+:global(.ProseMirror p) {
+  color: #000 !important;
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-wrap !important;
+}

@@ -1,0 +1,140 @@
+/* ================================
+   Wrapper
+================================ */
+.umodWrapper {
+  margin-top: 1rem;
+}
+
+/* ================================
+   Top bar with filters + add button
+================================ */
+.umodTopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+/* ================================
+   Filter Section
+================================ */
+.umodFilterSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* helps prevent overflow */
+}
+
+.umodFilterGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.umodFilterGroup label {
+  font-size: 0.75rem;
+  color: #104eb1;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* Bigger filter input */
+.umodDatePickerInput {
+  padding: 10px 14px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  width: 240px;
+  max-width: 100%;
+}
+
+.umodDatePickerInput:focus {
+  border-color: #07214b;
+}
+
+/* Filter buttons vertically centered */
+.umodFilterButtons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Add button aligned with filter row */
+.umodAddBtn {
+  align-self: center;
+}
+
+/* ================================
+   Status Styles
+================================ */
+.umodStatus {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.umodApproved {
+  background-color: #e1f8e7;
+  color: #1a7f37;
+}
+
+.umodPending {
+  background-color: #fff4e5;
+  color: #e07b00;
+}
+
+.umodRejected {
+  background-color: #fde7e9;
+  color: #b30021;
+}
+
+/* ================================
+   Edit Button
+================================ */
+.umodEditBtn {
+  padding: 4px 12px !important;
+  font-size: 0.8rem;
+}
+
+/* ================================
+   Responsive Fixes
+================================ */
+@media (max-width: 768px) {
+  .umodTopBar {
+    flex-direction: column;
+    align-items: flex-start; /* stack vertically */
+  }
+
+  .umodFilterSection {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .umodFilterButtons {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .umodAddBtn {
+    width: 100%; /* Add button full-width on mobile */
+  }
+
+  .umodDatePickerInput {
+    width: 100%; /* Date input full-width on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .umodFilterButtons button,
+  .umodAddBtn {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+}

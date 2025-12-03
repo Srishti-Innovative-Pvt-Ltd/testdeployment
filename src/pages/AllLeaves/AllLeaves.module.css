@@ -1,0 +1,82 @@
+.allLeavesContainer {
+  padding: 10px;
+}
+
+/* Filter Section */
+.allLeavesFilterSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: end;
+}
+
+.allLeavesFilterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.allLeavesFilterGroup label {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  color: #104eb1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.allLeavesFilterGroup select {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.allLeavesFilterGroup select:focus {
+  border-color: #07214b;
+}
+
+.allLeavesDatePickerInput {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #333;
+  width: 100%;
+}
+
+.allLeavesFilterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+/* Table Action Icon */
+.allLeavesActionIcon {
+  font-size: 1.2rem;
+  color: #2196f3;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .allLeavesFilterSection {
+    grid-template-columns: 1fr;
+  }
+
+  .allLeavesFilterButtons {
+    justify-content: flex-start;
+  }
+
+  .allLeavesActionIcon {
+    font-size: 2rem;
+  }
+}

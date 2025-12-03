@@ -1,0 +1,274 @@
+.addAssignedLeave__modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.addAssignedLeave__modal {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: auto;
+  max-width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.addAssignedLeave__modalHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+.addAssignedLeave__closeIcon {
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.addAssignedLeave__infoIcon {
+  color: #007bff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.addAssignedLeave__tableWrapper {
+  width: 100%;
+}
+
+.addAssignedLeave__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.addAssignedLeave__fieldGroup {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  flex: 1;
+}
+
+.addAssignedLeave__fieldGroup label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #007bff;
+  margin-bottom: 4px;
+}
+
+.addAssignedLeave__field {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.formGroupCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 0.4rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.checkboxInput {
+  width: 16px;
+  height: 16px;
+  color: black;
+  cursor: pointer;
+
+}
+
+.addAssignedLeave__deleteIcon {
+  color: red;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.addAssignedLeave__modalFooter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.addAssignedLeave__error {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 2px;
+  white-space: normal;
+}
+
+.star{
+  color: red;
+}
+/* Company Dropdown Custom Style */
+.AssignedLeaveFilterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  flex: 1;
+  min-width: 180px;
+  margin-bottom: 1.5rem;
+}
+
+.AssignedLeaveFilterGroup label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: white;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  color: #104eb1;
+  font-weight: 500;
+}
+
+.AssignedLeaveSelect {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.AssignedLeaveSelect:focus {
+  border-color: #07214b;
+}
+
+.addAssignedLeave__info {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  color: #104eb1;
+}
+
+.addAssignedLeave__infotooltipText {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.addAssignedLeave__tooltip {
+  position: absolute;
+  top: 0;
+  left: 120%;
+  margin-left: 8px;
+  width: 320px;
+  background: #333;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 1.5;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1000;
+  white-space: normal;
+}
+
+
+.addAssignedLeave__tooltip::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 100%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent #333 transparent transparent;
+
+}
+
+.addAssignedLeave__infotooltipText:hover .addAssignedLeave__tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.addAssignedLeave__YESNO {
+  color: black;
+}
+
+/* hover */
+.labelWithTooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.labelWithTooltip label {
+  display: inline-block;
+}
+
+.labelTooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 1.4;
+  position: absolute;
+   bottom: 100%;       
+  left: 50%;  
+  margin-left: 6px;
+  transform: translateX(-50%) translateY(-6px);
+  white-space: normal;
+  z-index: 1000;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.labelTooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;              /* place arrow at bottom edge of tooltip */
+  left: 50%;              /* center horizontally */
+  transform: translateX(-50%);  
+  border-width: 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+
+.labelWithTooltip:hover .labelTooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .addAssignedLeave__row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .addAssignedLeave__deleteIcon {
+    align-self: flex-end;
+    margin-top: 1rem;
+  }
+}

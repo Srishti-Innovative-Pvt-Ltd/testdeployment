@@ -1,0 +1,148 @@
+.pageContainer {
+  padding: 2rem;
+}
+
+.dayBlock {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: #fdfdfd;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f7ff;
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.dayDetails {
+  padding: 1rem;
+}
+
+.statusLine {
+  margin-bottom: 1rem;
+}
+
+.entryBlock {
+  border: 1px dashed #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.entryRow {
+  margin: 0.4rem 0;
+}
+
+.comments {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.statusApproved {
+  color: green;
+  font-weight: bold;
+}
+.statusRejected {
+  color: red;
+  font-weight: bold;
+}
+.statusPending {
+  color: orange;
+  font-weight: bold;
+}
+
+.toggle3D {
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+
+.activeGreen {
+  background-color: #c8f7c5;
+  color: #256029;
+}
+.activeRed {
+  background-color: #fddede;
+  color: #9e1c1c;
+}
+
+.progressBarOuter {
+  background: #e0e0e0;
+  border-radius: 5px;
+  width: 100%;
+  height: 10px;
+  margin-top: 4px;
+}
+.progressBarInner {
+  background: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.filterContainer {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dayFilterSelect {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  height: 120px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.reactSelect {
+  max-width: 300px;
+}
+
+
+.filterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.filterGroup label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: white;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  color: #104eb1;
+  font-weight: 500;
+  transition: 0.3s ease;
+  
+}
+
+.datePickerInput {
+  padding: 10px 12px;
+  border: 1.5px solid #104eb1;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #333;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.datePickerInput:focus {
+  border-color: #07214b;
+}
